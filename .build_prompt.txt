@@ -1,0 +1,54 @@
+Build a complete, production-quality, responsive marketing website for a Ukrainian charity organization called "Навчаємо" ("We Teach"). This is a UI/UX design practice assignment that will be imported into Figma later via the html.to.design plugin, so the markup must be clean, semantic, and visually polished. Target the latest 2025-2026 web design trends with a clean / neo-minimalism aesthetic.
+
+== TECH STACK ==
+- Plain HTML5 + modern CSS (CSS variables, Flexbox/Grid) + vanilla JS. NO build step. Each page must open directly in a browser via file://.
+- Shared CSS file (css/styles.css) and shared JS (js/main.js). Keep all pages in the project root so relative links work when opened as files.
+- Use Google Fonts "Inter" via CDN link with a local fallback font stack. Use inline SVG icons (do NOT depend on external icon CDNs that may break offline).
+- Images: use high-quality royalty-free placeholders. Prefer https://images.unsplash.com source URLs with descriptive alt text (children education, Ukrainian, volunteers, classrooms). Also add lightweight inline SVG illustrations/patterns as graceful fallback hero graphics.
+
+== BRAND / DESIGN SYSTEM (mandatory) ==
+Color palette (Ukraine brandbook):
+- Primary (blue, trust/stability): #0057B8
+- Accent (yellow, energy/hope, national color): #FFD700
+- Neutrals: #FFFFFF, #F8F9FA, #E9ECEF, #495057, #212529
+- Success/Impact (green): #28A745
+Typography: Inter. Headings Bold/Semibold, body Regular 16-18px. Clear hierarchy and readability.
+Required modern trends to implement:
+- Large hero sections with strong CTA ("Допомогти зараз")
+- Micro-animations and smooth transitions (CSS transitions, scroll-reveal via IntersectionObserver)
+- Glassmorphism / subtle shadows on cards (tasteful, not overloaded)
+- Infographics and animated statistics (count-up numbers on scroll)
+- Dark mode toggle (persist with localStorage)
+- Full responsiveness (mobile-first), works desktop + mobile
+- Accessibility: high contrast, aria-labels, visible focus states, semantic landmarks, alt text
+Build a reusable component library used across pages: buttons (primary/secondary/ghost), fundraising cards, donation forms, icons, modals, progress bars, navbar, footer, badges, section headers. Also create a standalone "design-system.html" page that showcases all components (this is the Figma Design System reference).
+
+== SITE STRUCTURE (7 mandatory pages, all with realistic Ukrainian content) ==
+1. Home (index.html): Hero with logo + slogan + strong CTA "Допомогти зараз". Real-time impact statistics (animated counters), featured projects, testimonials, "Наші збори" block with progress bars.
+2. About (about.html): Mission & values, short history (timeline), team (photos + bios), partners & grant donors logos, "Чому ми" block with numbers.
+3. Projects (projects.html): Grid of project cards with description, goals, deadline, "Підтримати" button. Working JS filters by child age / region / aid type.
+4. Fundraisings (fundraisings.html): Active and completed fundraisers. Each card: title, description, raised/goal, progress bar, deadline, donate button. Include a "Створити свій збір" CTA/modal.
+5. Documentation (documentation.html): Transparency section - financial reports, grant usage reports, audit conclusions, registration documents. Present as downloadable document cards/list. TRUST-critical page - emphasize transparency clearly.
+6. News (news.html): Articles, alumni success stories, event announcements. List with previews, working search, categories filter, newsletter subscription form.
+7. Contacts (contacts.html): Contact form with validation, interactive map (embed OpenStreetMap iframe for Kyiv or a styled static map), email, phone, social links, donation QR codes (SVG placeholders), bank transfer requisites.
+
+Mission text to use: "Кожна дитина в Україні має право на якісну освіту та можливість реалізувати свій потенціал, незалежно від обставин".
+Organization context: provides quality education and skills development for children from low-income families, internally displaced persons (IDPs), children of veterans, and youth from war-affected regions.
+
+== CONTENT REQUIREMENTS ==
+- ALL user-facing text in Ukrainian, realistic and specific (real-sounding project names, fundraiser amounts in грн, dates, team member names/roles, news headlines, testimonials). No lorem ipsum.
+- Consistent shared navbar (logo "Навчаємо", nav links to all 7 pages, dark mode toggle, "Допомогти зараз" button) and footer (contacts, socials, quick links, requisites) across every page.
+- Make at least Home, Fundraisings, and Projects pages rich and complete.
+
+== QUALITY BAR ==
+- The site must look modern, trustworthy, warm, patriotic - matching a real award-worthy charity site (reference quality: prytulafoundation.org, savelife.in.ua, koloua.com).
+- Cross-link all pages. Active nav state on current page.
+- No console errors. All interactive elements (filters, dark mode, modals, counters, forms, search) must actually work.
+- Mobile menu (hamburger) must work.
+
+== DELIVERABLES ==
+- All HTML/CSS/JS files in the project root.
+- A README.md explaining structure and how to open it.
+- After building, VERIFY by opening pages and checking: no broken links, dark mode toggle works, responsive layout works at a narrow viewport, filters/counters/modals work. Report exactly which pages and features you verified and how.
+
+Work in the project directory. Build everything. Do NOT stop early - deliver all 7 pages + design-system.html fully built with real Ukrainian content.

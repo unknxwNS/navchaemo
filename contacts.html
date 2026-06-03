@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Контакти — Навчаємо</title>
+  <meta name="description" content="Зв'яжіться з фондом «Навчаємо»: форма зв'язку, карта Києва, email, телефон, соцмережі, QR-коди та банківські реквізити." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230057B8'/%3E%3Cpath d='M8 11l8-4 8 4-8 4-8-4zm0 5l8 4 8-4' stroke='%23FFD700' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти до основного вмісту</a>
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand" aria-label="Навчаємо — головна"><span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M6 12l10-5 10 5-10 5-10-5z" fill="#fff"/><path d="M6 16l10 5 10-5M11 18.5V24" stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Навчаємо<small>Освіта без меж</small></span></a>
+      <nav class="nav-links" id="nav-links" aria-label="Головна навігація">
+        <a href="index.html">Головна</a><a href="about.html">Про нас</a><a href="projects.html">Проєкти</a><a href="fundraisings.html">Збори</a><a href="documentation.html">Звітність</a><a href="news.html">Новини</a><a href="contacts.html" class="active" aria-current="page">Контакти</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" data-theme-toggle aria-label="Перемкнути темну тему" aria-pressed="false"><svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+        <a href="fundraisings.html" class="btn btn--accent btn--sm">Допомогти зараз</a>
+        <button class="nav-toggle" data-nav-toggle aria-label="Відкрити меню" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumbs reveal"><a href="index.html">Головна</a> / Контакти</nav>
+        <div class="section-header reveal"><span class="eyebrow">Зв'язок</span><h1 class="h1 balance">Напишіть нам — ми завжди на зв'язку</h1><p class="lead">Питання про співпрацю, волонтерство чи звітність? Заповніть форму або скористайтеся реквізитами нижче.</p></div>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container">
+        <div class="grid cols-2" style="align-items:start">
+          <!-- CONTACT FORM -->
+          <div class="card reveal" style="padding:clamp(22px,4vw,36px)">
+            <h2 class="h3 mb-3">Форма зв'язку</h2>
+            <form data-validate novalidate>
+              <div class="field"><label for="name">Ім'я <span class="req">*</span></label><input class="input" id="name" required /><span class="error-msg">Будь ласка, вкажіть ваше ім'я.</span></div>
+              <div class="field"><label for="email">Email <span class="req">*</span></label><input class="input" id="email" type="email" required /><span class="error-msg">Вкажіть коректну email-адресу.</span></div>
+              <div class="field"><label for="phone">Телефон</label><input class="input" id="phone" type="tel" placeholder="+38 (0__) ___-__-__" /></div>
+              <div class="field"><label for="topic">Тема звернення</label>
+                <select class="select" id="topic"><option>Загальне питання</option><option>Співпраця / партнерство</option><option>Волонтерство</option><option>ЗМІ / прес-запит</option><option>Питання щодо звітності</option></select>
+              </div>
+              <div class="field"><label for="msg">Повідомлення <span class="req">*</span></label><textarea class="textarea" id="msg" required></textarea><span class="error-msg">Напишіть, будь ласка, ваше повідомлення.</span></div>
+              <div class="form-success">Дякуємо! Ваше повідомлення надіслано — ми відповімо найближчим часом. 💙💛</div>
+              <button class="btn btn--primary btn--block btn--lg" type="submit">Надіслати повідомлення</button>
+            </form>
+          </div>
+
+          <!-- CONTACT INFO + MAP -->
+          <div class="reveal d1">
+            <div class="grid" style="gap:16px;margin-bottom:24px">
+              <div class="doc-item"><span class="doc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span><span class="doc-meta"><strong>Адреса офісу</strong><small>м. Київ, вул. Хрещатик, 22, оф. 4</small></span></div>
+              <div class="doc-item"><span class="doc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span><span class="doc-meta"><strong>Телефон</strong><small><a href="tel:+380441234567">+38 (044) 123-45-67</a></small></span></div>
+              <div class="doc-item"><span class="doc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg></span><span class="doc-meta"><strong>Email</strong><small><a href="mailto:info@navchaiemo.org.ua">info@navchaiemo.org.ua</a></small></span></div>
+            </div>
+            <!-- MAP -->
+            <iframe title="Карта розташування офісу в Києві" src="https://www.openstreetmap.org/export/embed.html?bbox=30.516%2C50.443%2C30.534%2C50.452&amp;layer=mapnik&amp;marker=50.4475%2C30.525" style="width:100%;height:300px;border:1px solid var(--border);border-radius:var(--radius)" loading="lazy"></iframe>
+            <p class="form-note mt-2"><a href="https://www.openstreetmap.org/?mlat=50.4475&mlon=30.525#map=16/50.4475/30.525" target="_blank" rel="noopener">Відкрити більшу карту →</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DONATION QR + REQUISITES -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-header center reveal"><span class="eyebrow">Підтримати напряму</span><h2 class="h2">QR-коди та банківські реквізити</h2><p class="lead">Скануйте QR-код або скористайтеся реквізитами для переказу.</p></div>
+        <div class="grid cols-3">
+          <div class="card qr-card reveal">
+            <svg class="qr" viewBox="0 0 100 100" role="img" aria-label="QR-код для Monobank"><rect width="100" height="100" fill="#fff"/><g fill="#212529"><rect x="6" y="6" width="22" height="22"/><rect x="12" y="12" width="10" height="10" fill="#fff"/><rect x="72" y="6" width="22" height="22"/><rect x="78" y="12" width="10" height="10" fill="#fff"/><rect x="6" y="72" width="22" height="22"/><rect x="12" y="78" width="10" height="10" fill="#fff"/><rect x="36" y="6" width="6" height="6"/><rect x="48" y="6" width="6" height="6"/><rect x="36" y="18" width="6" height="6"/><rect x="60" y="18" width="6" height="6"/><rect x="6" y="36" width="6" height="6"/><rect x="18" y="36" width="6" height="6"/><rect x="36" y="36" width="6" height="6"/><rect x="48" y="42" width="6" height="6"/><rect x="60" y="36" width="6" height="6"/><rect x="72" y="42" width="6" height="6"/><rect x="84" y="36" width="6" height="6"/><rect x="36" y="48" width="6" height="6"/><rect x="60" y="54" width="6" height="6"/><rect x="42" y="60" width="6" height="6"/><rect x="54" y="60" width="6" height="6"/><rect x="72" y="60" width="6" height="6"/><rect x="84" y="66" width="6" height="6"/><rect x="36" y="72" width="6" height="6"/><rect x="48" y="78" width="6" height="6"/><rect x="60" y="72" width="6" height="6"/><rect x="72" y="84" width="6" height="6"/></g></svg>
+            <div><strong>Monobank</strong><p class="muted" style="font-size:.9rem">Банка «Навчаємо»<br />send.monobank.ua/jar/navchaiemo</p></div>
+          </div>
+          <div class="card qr-card reveal d1">
+            <svg class="qr" viewBox="0 0 100 100" role="img" aria-label="QR-код для PrivatBank"><rect width="100" height="100" fill="#fff"/><g fill="#212529"><rect x="6" y="6" width="22" height="22"/><rect x="12" y="12" width="10" height="10" fill="#fff"/><rect x="72" y="6" width="22" height="22"/><rect x="78" y="12" width="10" height="10" fill="#fff"/><rect x="6" y="72" width="22" height="22"/><rect x="12" y="78" width="10" height="10" fill="#fff"/><rect x="42" y="6" width="6" height="6"/><rect x="54" y="12" width="6" height="6"/><rect x="36" y="24" width="6" height="6"/><rect x="60" y="6" width="6" height="6"/><rect x="6" y="42" width="6" height="6"/><rect x="18" y="48" width="6" height="6"/><rect x="42" y="42" width="6" height="6"/><rect x="54" y="36" width="6" height="6"/><rect x="66" y="48" width="6" height="6"/><rect x="78" y="42" width="6" height="6"/><rect x="90" y="48" width="6" height="6"/><rect x="42" y="54" width="6" height="6"/><rect x="54" y="60" width="6" height="6"/><rect x="36" y="66" width="6" height="6"/><rect x="48" y="72" width="6" height="6"/><rect x="60" y="78" width="6" height="6"/><rect x="72" y="66" width="6" height="6"/><rect x="84" y="72" width="6" height="6"/></g></svg>
+            <div><strong>PrivatBank</strong><p class="muted" style="font-size:.9rem">Картка фонду<br />next.privat24.ua/navchaiemo</p></div>
+          </div>
+          <div class="card qr-card reveal d2">
+            <svg class="qr" viewBox="0 0 100 100" role="img" aria-label="QR-код для PayPal"><rect width="100" height="100" fill="#fff"/><g fill="#212529"><rect x="6" y="6" width="22" height="22"/><rect x="12" y="12" width="10" height="10" fill="#fff"/><rect x="72" y="6" width="22" height="22"/><rect x="78" y="12" width="10" height="10" fill="#fff"/><rect x="6" y="72" width="22" height="22"/><rect x="12" y="78" width="10" height="10" fill="#fff"/><rect x="36" y="12" width="6" height="6"/><rect x="48" y="6" width="6" height="6"/><rect x="60" y="12" width="6" height="6"/><rect x="36" y="36" width="6" height="6"/><rect x="48" y="48" width="6" height="6"/><rect x="60" y="36" width="6" height="6"/><rect x="6" y="48" width="6" height="6"/><rect x="18" y="42" width="6" height="6"/><rect x="72" y="36" width="6" height="6"/><rect x="84" y="48" width="6" height="6"/><rect x="42" y="60" width="6" height="6"/><rect x="54" y="66" width="6" height="6"/><rect x="36" y="78" width="6" height="6"/><rect x="60" y="72" width="6" height="6"/><rect x="72" y="60" width="6" height="6"/><rect x="84" y="78" width="6" height="6"/></g></svg>
+            <div><strong>PayPal</strong><p class="muted" style="font-size:.9rem">Міжнародні перекази<br />donate@navchaiemo.org.ua</p></div>
+          </div>
+        </div>
+
+        <div class="glass reveal mt-4" style="padding:clamp(24px,4vw,36px)">
+          <h3 class="h3 mb-2">Банківські реквізити для переказу</h3>
+          <div class="grid cols-2">
+            <div class="req-box"><p>Отримувач: <strong>БО «Навчаємо»</strong></p><p>ЄДРПОУ: <code>40123456</code></p><p>IBAN: <code>UA00 3052 9900 0002 6007 0012 3456</code></p></div>
+            <div class="req-box"><p>Банк: <strong>АТ КБ «ПриватБанк»</strong></p><p>МФО: <code>305299</code></p><p>Призначення: <em>Благодійна пожертва на статутну діяльність</em></p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <a href="index.html" class="brand"><span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M6 12l10-5 10 5-10 5-10-5z" fill="#fff"/><path d="M6 16l10 5 10-5M11 18.5V24" stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Навчаємо</span></a>
+          <p>Благодійна організація, що дає українським дітям якісну освіту та можливість реалізувати свій потенціал — незалежно від обставин.</p>
+          <div class="socials">
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V6h-3c-2 0-3 1.3-3 3.2V11H9v3h2v7h3v-7h2.4l.6-3H14V9.5c0-.3.2-.5.5-.5z"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+            <a href="#" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.5 4.5L2.8 11.7c-.9.4-.9 1.6 0 1.9l4.6 1.5 1.8 5.6c.2.7 1.1.9 1.6.3l2.6-2.6 4.7 3.5c.6.4 1.5.1 1.7-.7l3-14.4c.2-.9-.7-1.7-1.6-1.3z"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 8.2a3 3 0 0 0-2.1-2.1C18 5.5 12 5.5 12 5.5s-6 0-7.9.6A3 3 0 0 0 2 8.2 31 31 0 0 0 1.5 12 31 31 0 0 0 2 15.8a3 3 0 0 0 2.1 2.1c1.9.6 7.9.6 7.9.6s6 0 7.9-.6a3 3 0 0 0 2.1-2.1c.4-1.9.5-3.8.5-3.8s0-1.9-.5-3.8zM10 15V9l5 3z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col"><h4>Навігація</h4><a href="index.html">Головна</a><a href="about.html">Про нас</a><a href="projects.html">Проєкти</a><a href="fundraisings.html">Збори</a></div>
+        <div class="footer-col"><h4>Організація</h4><a href="documentation.html">Звітність</a><a href="news.html">Новини</a><a href="contacts.html">Контакти</a><a href="fundraisings.html">Допомогти</a></div>
+        <div class="footer-col"><h4>Контакти та реквізити</h4><div class="req-box"><p>м. Київ, вул. Хрещатик, 22, оф. 4</p><p><a href="tel:+380441234567">+38 (044) 123-45-67</a></p><p><a href="mailto:info@navchaiemo.org.ua">info@navchaiemo.org.ua</a></p><p style="margin-top:8px">ЄДРПОУ: <code>40123456</code><br />IBAN: <code>UA00 3052 9900 0002 6007</code></p></div></div>
+      </div>
+      <div class="footer-bottom"><span>© <span data-year>2025</span> БО «Навчаємо». Усі права захищено.</span><span>Зроблено з ♥ для українських дітей</span></div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
