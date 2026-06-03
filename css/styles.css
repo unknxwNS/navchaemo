@@ -321,9 +321,9 @@ h1, h2, h3, h4 { line-height: 1.2; font-weight: 700; letter-spacing: -0.02em; }
   position: absolute; padding: 16px 18px; border-radius: var(--radius);
   display: flex; align-items: center; gap: 12px; max-width: 230px;
 }
-.hero__float.tl { top: 18px; left: -14px; }
-.hero__float.br { bottom: 24px; right: -14px; }
-@media (max-width: 520px) { .hero__float.tl { left: 6px; } .hero__float.br { right: 6px; } }
+.hero__float.tl { top: 18px; left: 16px; }
+.hero__float.br { bottom: 24px; right: 16px; }
+@media (max-width: 520px) { .hero__float.tl { left: 12px; } .hero__float.br { right: 12px; } }
 .hero__float .ico { width: 40px; height: 40px; border-radius: 11px; display: grid; place-items: center; flex: none; }
 .hero__float .ico svg { width: 22px; height: 22px; }
 .hero__float strong { font-size: 1.2rem; display: block; line-height: 1; }
